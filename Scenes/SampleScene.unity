@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopId: 1
-  capacity: 3
+  capacity: 5
   waiting: 4
   pAdd: 0.01
 --- !u!1 &133217136
@@ -762,7 +762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopId: 2
-  capacity: 3
+  capacity: 5
   waiting: 0
   pAdd: 0.01
 --- !u!1 &650090941
@@ -1077,7 +1077,7 @@ MonoBehaviour:
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 10
-  busIdx: 0
+  busIdx: 2
   passengersBoarded: 0
   loading: 0
   otherBus: {fileID: 1497271320}
@@ -1269,7 +1269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopId: 3
-  capacity: 3
+  capacity: 5
   waiting: 0
   pAdd: 0.01
 --- !u!1 &1497271320
@@ -1401,7 +1401,7 @@ MonoBehaviour:
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 10
-  busIdx: 0
+  busIdx: 1
   passengersBoarded: 0
   loading: 0
   otherBus: {fileID: 1130012383}
@@ -1559,7 +1559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopId: 4
-  capacity: 3
+  capacity: 5
   waiting: 0
   pAdd: 0.01
 --- !u!1 &1969341663

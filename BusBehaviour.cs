@@ -32,8 +32,8 @@ public class BusBehaviour : Agent
     private float rwdPsxPickup = 0.05f; // Passenger pickup
     private float rwdPrevStop = -1.0f; // Returning to previous stop
     private float rwdCircuit = 0.25f; // Completing a circuit
-    private float rwdDistance = 5.0f; // Maintaining distance
-    private float rwdAction = -0.0001f; // Action penalty
+    private float rwdDistance = 3.0f; // Maintaining distance
+    private float rwdAction = -0.001f; // Action penalty
     private float rwdEachStop = 0.1f; // Reaching each stop
     private float rwdAwayFromGoal = -1.0f; // Going away from goal
 
@@ -123,6 +123,8 @@ public class BusBehaviour : Agent
         AddVectorObs(this.loading);
         AddVectorObs(otherBusState.loading);
 
+        // TODO: Passengers waiting at stops 
+        
 	}
 	
 	public override void AgentAction(float[] vectorAction, string textAction)
@@ -139,12 +141,12 @@ public class BusBehaviour : Agent
         {
             moveAmount = moveSpeed * 0.5f; // slower speed
         }
-        else if (vectorAction[0] == 3)
+        else if (vectorAction[0] == 3) // TODO: Change to only act when near stop
         {
-            moveAmount = 0f; // wait
+            moveAmount = moveSpeed * 0.25f; // even slower
         }
         
-        print(busIdx.ToString() + " move amount " + moveAmount.ToString());
+        // print(this.name + " move amount " + moveAmount.ToString());
         
         // Apply the movement
         Vector3 moveVector = transform.forward * moveAmount;
