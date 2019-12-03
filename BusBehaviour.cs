@@ -80,11 +80,11 @@ public class BusBehaviour : Agent
         // WARNING: Rewarding here is very frequent so use with caution
 
         // Progression towards goal?
-        float stopDist = Vector3.Distance(navAgent.destination, this.transform.position);
-        if (stopDist > prevStopDist) { // Agent gone away from goal
-            AddReward(rwdAwayFromGoal);
-        }
-        prevStopDist = stopDist;
+        // float stopDist = Vector3.Distance(navAgent.destination, this.transform.position);
+        // if (stopDist > prevStopDist) { // Agent gone away from goal
+        //     AddReward(rwdAwayFromGoal);
+        // }
+        // prevStopDist = stopDist;
 
         // TODO: Reward bus for being in correct index order
 

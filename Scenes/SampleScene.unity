@@ -1081,7 +1081,7 @@ MonoBehaviour:
   passengersBoarded: 0
   loading: 0
   otherBus: {fileID: 1497271320}
-  moveSpeed: 100
+  moveSpeed: 10
   nextStopIdx: 2
   currentStop: 
 --- !u!195 &1130012390
@@ -1121,7 +1121,7 @@ MonoBehaviour:
   m_BrainParameters:
     vectorObservationSize: 18
     numStackedVectorObservations: 1
-    vectorActionSize: 010000000100000001000000
+    vectorActionSize: 03000000
     vectorActionDescriptions: []
     vectorActionSpaceType: 0
   m_Model: {fileID: 5022602860645237092, guid: fc4f6a7e62829484aaa2f02073d3a7ee, type: 3}
@@ -1405,7 +1405,7 @@ MonoBehaviour:
   passengersBoarded: 0
   loading: 0
   otherBus: {fileID: 1130012383}
-  moveSpeed: 100
+  moveSpeed: 10
   nextStopIdx: 0
   currentStop: 
 --- !u!195 &1497271327
@@ -1445,7 +1445,7 @@ MonoBehaviour:
   m_BrainParameters:
     vectorObservationSize: 18
     numStackedVectorObservations: 1
-    vectorActionSize: 010000000100000001000000
+    vectorActionSize: 03000000
     vectorActionDescriptions: []
     vectorActionSpaceType: 0
   m_Model: {fileID: 5022602860645237092, guid: fc4f6a7e62829484aaa2f02073d3a7ee, type: 3}
